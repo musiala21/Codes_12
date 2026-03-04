@@ -1,0 +1,12 @@
+a=int(input("enter the bill amount"))
+b=int(input("enter the customer amount"))
+c=(b-a)
+print ("The remaining amount is",c)
+d=c//100
+print("the number of 100 rs note is:",d)
+e=c//50
+print("the number of 50 rs note is:",e)
+f=c//500
+print("the number of 500 rs note is:",f)
+g=c//200
+print("the number of 200 rs note is:",g)

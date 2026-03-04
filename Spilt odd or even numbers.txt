@@ -1,0 +1,10 @@
+l1=list(map(int,input("enter integers in list").split()))
+evenlist=[]
+oddlist=[]
+for i in l1:
+   if i%2 == 0:
+      evenlist.append(i)
+   else:
+      oddlist.append(i)
+print("odd:",oddlist)
+print("even:",evenlist)

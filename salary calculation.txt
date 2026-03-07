@@ -1,0 +1,22 @@
+#include<stdio.h>
+int sal(int basic){
+   printf("hra: %f\n", 0.2*basic);
+   printf("da: %f\n", 0.8*basic);
+   int gross=basic+(0.2*basic)+(0.8*basic);
+   printf("gross: %d\n",gross);
+   int ded=0.12*((basic*0.8)+basic)+0.1*basic;
+   printf("deduction: %d\n",ded);
+   return (gross-ded);
+}
+int main()
+{
+   int id;
+   float basic;
+   printf("enter id:");
+   scanf("%d", &id);
+   printf("enter basic salary:");
+   scanf("%f", &basic);
+   printf("employeeid: %d\n",id);
+   int net=sal(basic);
+   printf("net salary: %d\n",net);
+}

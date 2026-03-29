@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+	int number;
+	char c;
+	cin>>number;
+	
+	if(number < 1 || number>9)
+			cout<<"Invalid Input";
+	else {
+		cin>>c;
+		if(c=='y') 
+			cout<<number+5;
+		else 
+			cout<<number;
+	}
+	return 0;
+}

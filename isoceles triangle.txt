@@ -1,0 +1,12 @@
+#include<iostream>
+#include<cmath>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float area;
+    float s;
+    cin>>area;
+    s=(sqrt(3)/4)*pow(area,2);
+    cout<<fixed<<setprecision(2)<<s;
+}

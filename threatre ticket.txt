@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+   int x,y,child_tickets,adult_tickets,senior_tickets;
+ cin >> x;
+ cin >> y;
+  child_tickets=(y-(5*x))/13;
+  adult_tickets=child_tickets+x;
+  senior_tickets=2*child_tickets;
+cout<<"Number of children tickets sold : "<<child_tickets;
+cout<<"\nNumber of adult tickets sold : "<<adult_tickets;
+cout<<"\nNumber of senior tickets sold : "<<senior_tickets;
+return 0;
+}

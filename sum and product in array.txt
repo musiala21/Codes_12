@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n, s=0,p=1;
+    cin>>n;
+    if(cin.fail()||n<=0)
+    {
+        cout<<"Invalid";
+        return 0;
+    }
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+        if(cin.fail())
+        {
+            cout<<"Invalid";
+            return 0;
+        }
+        s+=arr[i];
+        p*=arr[i];
+    }
+    cout<<"Sum:"<<s<<endl<<"Product:"<<p;
+    return 0;
+}

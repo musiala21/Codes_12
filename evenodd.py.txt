@@ -1,0 +1,7 @@
+def even(x):
+   if(x%2!=0):
+      return x
+l1=[1,2,3,4,5,6,7,8,9]
+print("the original list is",l1)
+l2 = list(map(even, l1))
+print("the modified list is",l2)

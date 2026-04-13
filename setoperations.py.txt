@@ -1,0 +1,6 @@
+s1={1,2,3,5,7,11,13}
+s2={1,3,5,7,9}
+print("the union is:",s1|s2)
+print("the intersection is:",s1&s2)
+print("the difference is:",s1-s2)
+print("the symmetric difference is:",s1^s2)s

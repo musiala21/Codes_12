@@ -1,0 +1,12 @@
+import numpy as np
+n,m = list(map(int, input().split()))
+A = [list(map(int, input().split())) for _ in range(n)]
+B = [list(map(int, input().split())) for _ in range(n)]
+a = np.array(A)
+b = np.array(B)
+print(np.add(a, b))
+print(np.subtract(a, b))
+print(np.multiply(a, b))
+print(np.floor_divide(a, b))
+print(np.mod(a, b))
+print(np.power(a, b))

@@ -1,0 +1,52 @@
+
+class Person {
+    public :
+    int age;
+    string name;
+    virtual void getdata()=0;   // actually pure virtual functions 
+    virtual void putdata() =0;  
+};
+class Professor: public Person{
+    public :
+    int publications;
+   static int cur_id;   // 
+   int temp_id;    // for storing cur_id and assigning it then ++ 
+    //constructor to ++ the cur id
+    Professor(){temp_id=++cur_id; }
+    void getdata();
+    void putdata();
+};
+int Professor::cur_id=0;
+void Professor::getdata(){
+    cin>>name>>age>>publications;
+}
+void Professor::putdata(){
+    cout<<name<<" "<<age<<" "<<publications<<" "<<temp_id<<endl;
+}
+class Student: public Person{
+    public :
+    int marks[6];
+    static int cur_id;
+    int temp_id;
+    // same explanation check upper 
+    Student(){
+        temp_id=++cur_id;
+    }
+    void getdata();
+    void putdata(); 
+};
+int Student::cur_id=0;
+void Student::getdata(){
+    //cout<<"taking";
+    cin>>name>>age;
+    for(int i=0;i<6;i++){
+        cin>>marks[i];
+    } 
+}
+void Student :: putdata(){
+     int total_sum=0;
+     for(int i=0;i<6;i++){
+        total_sum=total_sum+marks[i];
+     }
+     cout<<name<<" "<<age<<" "<<total_sum<<" "<<temp_id<<endl;
+}

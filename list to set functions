@@ -1,0 +1,15 @@
+def add_element(s):
+   n1=input("enter the element to be add:")
+   s.add(n1)
+   print("the new set with added element is",s)
+def remove_element(t):
+   n2=input("enter the element you want to remove:")
+   t.remove(n2)
+   print("the element has been removed")
+   print(t)
+l1=['apple','banana','apple','kiwi','strawberry','kiwi','pumpkin']
+updated_set=set(l1)
+print("the original list is",l1)
+print("the updated set is",updated_set)
+add_element(updated_set)
+remove_element(updated_set)
